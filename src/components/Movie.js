@@ -14,7 +14,6 @@ const Movie = (props) => {
 
   const handleDelete = (id) => {
     dispatch(deleteMovie(id));
-    dispatch(removeFavorite(id));
     push('/movies');
   };
 
